@@ -1,0 +1,85 @@
+नागरिकताको सिफारिस
+
+मिति:{{date}}    
+
+विषय:{{Subject}}    
+
+{{vdc_municipality}} गाउबिकास समिती/ नगरपालिका/ उपमहानगरपालिका/ महानगरपालिका वडा नं {{ward_no}}मा मिती {{DOB}} मा  जन्म भई हाल {{permanent_residence}} गाउबिकास समिती/ नगरपालिका /उपमहानगरपालिका / महानगरपालिका वडा नं मा {{ward_residence}} स्थायी बसोबास गर्ने यसमा लेखिएका श्रीमान /  श्रीमती {{FathersorMothersName}} का छोरा छोरी  का श्री /सुश्री {{PersonName}}लाई म राम्रो संङ्ग चिन्दछु । उपयुर्क्त लेखिए बमोजिमको निजको व्योहोरा साचो हो । निजलाई वंसज  जन्मका आधारमा नागरिकताको प्रमाणपत्र दिए हुन्छ । उक्त विवरण झुटो ठहरिए कानुन बमोजिम सहुला बुझाउला.
+
+
+  सिफारिस गर्नेको दस्तखत :..............................
+
+कार्यलयको नाम:{{kaaryalayakoNAme}}
+
+
+Cover Letter
+
+
+{{Company_name}}
+
+{{company_address}}
+
+{{application_date}}
+
+Dear sir,
+
+I would like to propose my candidacy for your position of {{position}} which was advertised on the {{advertise_medium}} on {{advertised_date}}.
+
+I am a highly talented and experienced {{job_experience}}with an extensive background in {{job_background}}. With my practical experience and long track record of success I am confident that I can become a top performer at your company.
+
+My long term career goal is to continue to learn and grow my specialist skills and abilities, whilst utilising my experience, knowledge and skills to benefit any employer, I am working for.
+
+I invite you to review my attached resume which will show you that I am a capable and professional individual who is able to perform to the highest standards in areas such as {{job_areas1}} and {{job_areas2}}.
+
+The foundation of my achievements to date lies in my ability to organise my time effectively, prioritise tasks, and use my initiative to come up with solutions to problems.
+
+I am available for an interview at any time, and should you require any further information then please do not hesitate to contact me.
+
+In the meantime I thank you sincerely for taking the time to read my application, and I very much look forward to an opportunity to speak to you in more detail regarding this position.
+
+Yours sincerely,
+
+{{your_name}}
+
+
+
+
+
+
+
+    {{name}}
+
+         
+
+Nationality : {{nationality}}             
+
+Gender : {{gender}}
+
+Email : {{email}}  
+
+Websites : {{websites}}
+
+Phone : {{phone}}    
+
+Address : {{address}}
+
+
+Qualifications :
+
+{{qualifications}}
+
+Education :
+
+{{education}}
+
+Skills :
+
+{{skills}}
+
+Work Experience :
+
+{{work_experience}}
+
+Interests :
+
+{{Interests}}

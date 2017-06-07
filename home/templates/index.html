@@ -1,0 +1,329 @@
+{% load staticfiles %}
+{% include "home/header.html" %}
+
+
+<body data-spy="scroll">
+	
+	<!-- WRAPPER -->
+	<div id="wrapper">
+
+		<!-- NAVBAR -->
+		{% include "home/navbar.html" %}
+		<!-- END NAVBAR -->
+
+		<!-- HERO SECTION -->
+		<section id="home" class="hero-unit-fullscreen parallax-window" data-parallax="scroll" data-image-src="{% static 'new/assets/img/fullscreen-bg.jpg' %}">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="hero-content">
+					<h2><strong>Letter Generator</strong> <i></h2><p>deals with generating an application soft copy related to governmental and non governmental offices.</i>
+				<p>Your application letter in your language</p>
+				<p><h3>Export it in pdf format..<i class="fa fa-file-pdf-o" style="font-size:48px;color:white"></i></p></h3>
+
+					<span class="onepage-links"><a href="#overview" class="btn btn-lg btn-primary">LEARN MORE</a></span>
+				</div>
+			</div>
+		</section>
+		<!-- END HERO SECTION -->
+
+		<!-- OVERVIEW -->
+		<section id="overview">
+			<div class="container">
+				<div class="section-heading">
+					<h2 class="heading">OVERVIEW</h2>
+				</div>
+				<p class="text-center lead">Letter Generator deals with generating an application soft copy related to governmental and non governmental offices</p>
+
+			</div>
+		</section>
+		<!-- END OVERVIEW -->
+
+		<!-- FEATURES -->
+		<section id="templates">
+			<div class="container">
+				<div class="section-heading">
+					<h2 class="heading">TEMPLATES</h2>
+				</div>
+				<div class="container">
+					<div class="row feature-item">
+									{% for temp in templates %}
+
+						<div class="col-sm-4">
+							<h2>{{temp.name|safe}}</h2>
+							<a href="{% url 'template' temp.id %}"><img src="{{temp.image.url}}" class="img-responsive" alt="Feature" width="300" height="300"></a>
+
+						</div>
+					
+						{% endfor %}
+
+						</div>
+					
+					
+				</div>
+
+			</div>
+		</section>
+		<!-- END FEATURES -->
+
+		<!-- TESTIMONIAL -->
+		<section id="testimonial">
+			<div class="container-fluid">
+				<div id="testimonial-big-carousel" class="testimonial-big-carousel owl-carousel">
+					<div class="testimonial-big">
+						<p class="content"><span>It’s really, recommended </span></p>
+						<div class="author">
+							<img src="{% static 'new/assets/img/testimonial-author.png' %}" class="img-circle" alt="Avatar">
+							<span class="name">Emily Murray</span>
+							<span class="title text-muted-2x">CEO of TheCompany</span>
+						</div>
+					</div>
+					<div class="testimonial-big">
+						<p class="content"><span>Now, this is cool! </span></p>
+						<div class="author">
+							<img src="{% static 'new/assets/img/testimonial-author2.png' %}" class="img-circle" alt="Avatar">
+							<span class="name">Edward Freeman</span>
+							<span class="title text-muted-2x">hello</span>
+						</div>
+					</div>
+					<div class="testimonial-big">
+						<p class="content"><span>Thank you for supporting us</span></p>
+						<div class="author">
+							<img src="{% static 'new/assets/img/testimonial-author3.png' %}" class="img-circle" alt="Avatar">
+							<span class="name">Howard Mendez</span>
+							<span class="title text-muted-2x">Art Director of application</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END TESTIMONIAL -->
+
+		<!-- PRICING -->
+		<section id="pricing">
+			<div class="container">
+				<div class="section-heading">
+					<h2 class="heading">TEMPLATE PRICING</h2>
+				</div>
+				<P class="text-center lead">Choose your Templates</P>
+				<div class="pricing-table-set">
+					<div class="pricing-table">
+						<h4 id="free-trial" class="pricing-heading">SINGLE</h4>
+						<div class="pricing">
+							<strong class="price">$x</strong>
+							<span class="price-info">per license</span>
+						</div>
+						<a href="https://wrapbootstrap.com/theme/bravana-responsive-website-template-WB0D6B38R?ref=all-bootstrap" class="btn btn-default">PURCHASE</a>
+					</div>
+					<div class="pricing-table pricing-recommended">
+						<span class="popular">MOST POPULAR</span>
+						<h4 class="pricing-heading">MULTIPLE</h4>
+						
+						<div class="pricing">
+							<strong class="price">$x</strong>
+							<span class="price-info">per license</span>
+						</div>
+						<a href="https://wrapbootstrap.com/theme/bravana-responsive-website-template-WB0D6B38R?ref=all-bootstrap" class="btn btn-primary">PURCHASE</a>
+					</div>
+					<div class="pricing-table">
+						<h4 class="pricing-heading">EXTENDED</h4>
+						
+						<div class="pricing">
+							<strong class="price">$x</strong>
+							<span class="price-info">per license</span>
+						</div>
+						<a href="https://wrapbootstrap.com/theme/bravana-responsive-website-template-WB0D6B38R?ref=all-bootstrap" class="btn btn-default">PURCHASE</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END PRICING -->
+
+		<!-- TEAM -->
+		<section id="team">
+			<div class="container">
+				<div class="section-heading">
+					<h2 class="heading">TEAM</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="team-member">
+							<img src="{% static 'new/assets/img/person1.png' %}" class="img-responsive img-circle" alt="Person">
+							<div class="member-info">
+								<h3 class="name">Kyle Freeman</h3>
+								<span class="title text-muted">Director</span>
+								<p class="short-bio">Dramatically harness 2.0 products and leveraged sources. Dramatically drive intermandated expertise rather than clicks-and-mortar benefits.</p>
+								<ul class="list-inline social-icons">
+									<li><a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#" class="dribbble-bg"><i class="fa fa-dribbble"></i></a></li>
+									<li><a href="#" class="linkedin-bg"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="team-member">
+							<img src="{% static 'new/assets/img/person2.png' %}" class="img-responsive img-circle" alt="Person">
+							<div class="member-info">
+								<h3 class="name">Samuel Collins</h3>
+								<span class="title text-muted">Senior Manager</span>
+								<p class="short-bio">Dramatically harness 2.0 products and leveraged sources. Dramatically drive intermandated expertise rather than clicks-and-mortar benefits.</p>
+								<ul class="list-inline social-icons">
+									<li><a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#" class="dribbble-bg"><i class="fa fa-dribbble"></i></a></li>
+									<li><a href="#" class="linkedin-bg"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="team-member">
+							<img src="{% static 'new/assets/img/person3.png' %}" class="img-responsive img-circle" alt="Person">
+							<div class="member-info">
+								<h3 class="name">Diana Douglas</h3>
+								<span class="title text-muted">Account Executive</span>
+								<p class="short-bio">Dramatically harness 2.0 products and leveraged sources. Dramatically drive intermandated expertise rather than clicks-and-mortar benefits.</p>
+								<ul class="list-inline social-icons">
+									<li><a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#" class="dribbble-bg"><i class="fa fa-dribbble"></i></a></li>
+									<li><a href="#" class="linkedin-bg"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="team-member">
+							<img src="{% static 'new/assets/img/person3.png' %}" class="img-responsive img-circle" alt="Person">
+							<div class="member-info">
+								<h3 class="name">Diana Douglas</h3>
+								<span class="title text-muted">Account Executive</span>
+								<p class="short-bio">Dramatically harness 2.0 products and leveraged sources. Dramatically drive intermandated expertise rather than clicks-and-mortar benefits.</p>
+								<ul class="list-inline social-icons">
+									<li><a href="#" class="facebook-bg"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#" class="dribbble-bg"><i class="fa fa-dribbble"></i></a></li>
+									<li><a href="#" class="linkedin-bg"><i class="fa fa-linkedin"></i></a></li>
+									<li><a href="#" class="twitter-bg"><i class="fa fa-twitter"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END TEAM -->
+
+		<!-- CONTACT -->
+		<section id="contact">
+			<div class="container">
+				<div class="section-heading">
+					<h2 class="heading">CONTACT</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<p>
+							<strong><i class="icon icon_pin_alt"></i> ADDRESS</strong>
+							<br>
+							<span>Balkumari, Kathmandu</span>
+						</p>
+						<br>
+						<p>
+							<strong><i class="icon icon_phone"></i> PHONE</strong>
+							<br>
+							<span>Phone 1: 98xxxxxxxx</span>
+							<br>
+							<span>Phone 2: 98xxxxxxxx</span>
+						</p>
+						<br>
+						<p>
+							<strong><i class="icon icon_mail"></i> EMAIL</strong>
+							<br>
+							<span>Email  : <a href="mailto:hello@yourdomain.com">hello@application.com</a></span>
+						</p>
+					</div>
+					<div class="col-md-8">
+						<form id="contact-form" class="form-horizontal form-minimal">
+							<div class="row">
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="contact-name" class="control-label sr-only">Name</label>
+										<input type="text" class="form-control" id="contact-name" placeholder="Name (required)" required>
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<div class="form-group">
+										<label for="contact-email" class="control-label sr-only">Email</label>
+										<input type="email" class="form-control" id="contact-email" placeholder="Email (required)" required>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="contact-subject" class="control-label sr-only">Subject</label>
+								<div class="col-sm-12">
+									<input type="text" class="form-control" id="contact-subject" placeholder="Subject (optional)">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="contact-message" class="control-label sr-only">Message</label>
+								<div class="col-sm-12">
+									<textarea class="form-control" id="contact-message" name="contact-message" rows="5" cols="30" placeholder="Message (required)" required></textarea>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<button type="submit" class="btn btn-primary">Submit Message</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END CONTACT -->
+
+
+
+
+  {% comment %}  <html>
+ <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Type in Nepali - Unicode Nepali</title>
+  <link rel="stylesheet" href="static/new/assets/css/base.css" />
+  <link rel="stylesheet" type="text/css" href="static/new/assets/css/style.css" />
+  <script type="text/javascript" src="{% static '/new/assets/js/init.js' %}"> </script>
+ </head>
+
+ <body>
+  <div id="container" style="width:960px;margin:0 auto">
+   <h1>Nepali Unicode Converter</h1>
+   <div id="converter">
+	<div id='toolbar'> </div>
+	<div id='editMe'> </div>
+   </div>
+  </div>
+  <div id="copyright" style="margin-top:20px;font-size:12px;text-align:center">
+   Copyright &copy; <a href="http://sumanniroulaji.pythonanywherecom" style="font-weight:bold;text-decoration:none">Suman Niroula</a>. All rights reserved.
+  </div>
+ </body>
+</html>{% endcomment %}
+
+		<!-- FOOTER -->
+		 {% include "home/footer.html" %}
+		<!-- END FOOTER -->
+
+	</div>
+	<!-- END WRAPPER -->
+
+	<!-- JAVASCRIPT -->
+	<script src="{% static 'new/assets/js/jquery-2.1.1.min.js' %}"></script>
+	<script src="{% static 'new/assets/js/bootstrap.min.js' %}"></script>
+	<script src="{% static 'new/assets/js/plugins/scrolling/jquery.scrollTo-1.4.3.1-min.js' %}"></script>
+	<script src="{% static 'new/assets/js/plugins/scrolling/jquery.localscroll-1.2.7-min.js' %}"></script>
+	<script src="{% static 'new/assets/js/plugins/parallax/parallax.min.js' %}"></script>
+	<script src="{% static 'new/assets/js/plugins/owl-carousel/owl.carousel.min.js' %}"></script>
+	<script src="{% static 'new/assets/js/landee.js' %}"></script>
+	
+</body>
+
+</html>
